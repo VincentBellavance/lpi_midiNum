@@ -156,7 +156,7 @@ class: middle, center, inverse
 ### 1. Changements des populations
 
 .center[
-![:scale = 10%](images/LPI.png)
+![](images/LPI.png)
 ]
 ---
 class: middle, center, inverse
