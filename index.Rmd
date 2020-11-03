@@ -72,7 +72,7 @@ class: middle, center, inverse
 ---
 # Qu'est-ce que c'est?
 
-* Indice global de changement de biodiversité au niveau des populations
+* Indice global de changement de biodiversité
 <br>
 <br>
 --
@@ -82,14 +82,14 @@ class: middle, center, inverse
 <br>
 --
 
-* Inclut **~21,000 populations** de mammifères, oiseaux, poissons, reptiles, et amphibiens
+* Inclut **~21,000 populations** de **~4800** espèces de mammifères, oiseaux, poissons, reptiles, et amphibiens
 
 .cite[WWF. [2020](https://f.hubspotusercontent20.net/hubfs/4783129/LPR/PDFs/ENGLISH-SUMMARY.pdf) Living Planet Report 2020.]
 
 ---
 # Tendance globale en 2020
 
-L'indice global montre une baisse moyenne de 68 % (95% CI: -73 % à -62 %) des populations de mammifères, oiseaux, amphibiens, reptiles et poissons suivis entre 1970 et 2016.
+L'indice global montre une **baisse moyenne de 68%** (95% CI: -73% à -62%) dans l'abondance des populations vertébrés suivis entre 1970 et 2016.
 
 ![:scale = 90%](images/lpi2020.png)
 
@@ -98,6 +98,7 @@ L'indice global montre une baisse moyenne de 68 % (95% CI: -73 % à -62 %) des p
 ---
 # Tendances régionales en 2020
 
+L'indice peut aussi être décomposé par système (marin, eau douce, terrestre), groupe taxonomique, [région](http://stats.livingplanetindex.org/), etc.:
 
 ![:scale = 90%](images/lpi2020_regions.png)
 .cite[WWF. [2020](https://f.hubspotusercontent20.net/hubfs/4783129/LPR/PDFs/ENGLISH-SUMMARY.pdf) Living Planet Report 2020.]
@@ -112,7 +113,9 @@ class: middle, center, inverse
 ---
 # Qui l'utilise, et pour quoi?
 
-* Utilisé comme indicateur de biodiversité à l'échelle globale par la Convention sur la diversité biologique 
+L'Indice Planète Vivante est un important **outil de communication** pour les gestionnaires de biodiversité et le public.
+
+* Indicateur de biodiversité à l'échelle globale par la Convention sur la diversité biologique 
 
 --
 
@@ -130,7 +133,16 @@ class: middle, center, inverse
 * Guide les politiques de conservation et la gestion de la biodiversité
 
 ---
+# Qui l'utilise, et pour quoi?
 
+L'indice est aussi utilisé par les médias pour communiquer le statut de la biodiversité au grand public.
+
+![](images/nbc_headline.png)
+![](images/cnn_headline.png)
+
+Souvent communiqué de façon alarmiste, malgré les efforts des auteurs du rapport pour améliorer l'interprétation de l'indice...
+
+---
 
 class: middle, center, inverse
 
@@ -144,5 +156,28 @@ class: middle, center, inverse
 # L'Indice Planète Vivante
 ## Critiques
 <hr width="100%" align="left" size="0.3" color="orange"></hr>
+
+---
+# Communication vs. complexité
+
+* Une tendance moyenne est **facilement communiquée**
+
+![](images/lpi2020.png)
+.cite[WWF. [2020](https://f.hubspotusercontent20.net/hubfs/4783129/LPR/PDFs/ENGLISH-SUMMARY.pdf) Living Planet Report 2020.]
+
+---
+# Communication vs. complexité
+
+* Mais, la variabilité des tendances des populations est masquée
+
+.font10[
+Proportion de populations en croissance (bleu), stables (vert), et en déclin (rouge)
+]
+
+![](images/trend_breakdown.png)
+
+![:scale = 20%](images/trend_breakdown_legend.png)
+
+.cite[WWF. [2020](https://f.hubspotusercontent20.net/hubfs/4783129/LPR/PDFs/ENGLISH%20-%20TECH%20SUPPLIMENT.pdf) Living Planet Report 2020 (Technical Supplement).]
 
 ---
