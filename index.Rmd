@@ -84,6 +84,8 @@ class: middle, center, inverse
 
 * Inclut **~21,000 populations** de **~4800** espèces de mammifères, oiseaux, poissons, reptiles, et amphibiens
 
+.center[![](images/taxa.png)]
+
 .cite[WWF. [2020](https://f.hubspotusercontent20.net/hubfs/4783129/LPR/PDFs/ENGLISH-SUMMARY.pdf) Living Planet Report 2020.]
 
 ---
@@ -91,7 +93,7 @@ class: middle, center, inverse
 
 L'indice global montre une **baisse moyenne de 68%** (95% CI: -73% à -62%) dans l'abondance des populations vertébrés suivis entre 1970 et 2016.
 
-![:scale = 90%](images/lpi2020.png)
+.center[![:scale = 90%](images/lpi2020.png)]
 
 .cite[WWF. [2020](https://f.hubspotusercontent20.net/hubfs/4783129/LPR/PDFs/ENGLISH-SUMMARY.pdf) Living Planet Report 2020.]
 
@@ -151,6 +153,12 @@ class: middle, center, inverse
 <hr width="100%" align="left" size="0.3" color="orange"></hr>
 
 ---
+### 1. Changements des populations
+
+.center[
+![:scale = 10%](images/LPI.png)
+]
+---
 class: middle, center, inverse
 
 # L'Indice Planète Vivante
@@ -174,9 +182,13 @@ class: middle, center, inverse
 Proportion de populations en croissance (bleu), stables (vert), et en déclin (rouge)
 ]
 
+.pull-left2[
 ![](images/trend_breakdown.png)
+]
 
-![:scale = 20%](images/trend_breakdown_legend.png)
+.pull-right2[
+![](images/trend_breakdown_legend.png)
+]
 
 .cite[WWF. [2020](https://f.hubspotusercontent20.net/hubfs/4783129/LPR/PDFs/ENGLISH%20-%20TECH%20SUPPLIMENT.pdf) Living Planet Report 2020 (Technical Supplement).]
 
