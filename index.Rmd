@@ -70,7 +70,6 @@ class: middle, center, inverse
 <hr width="100%" align="left" size="0.3" color="orange"></hr>
 
 ---
-
 # Qu'est-ce que c'est?
 
 * Indice global de changement de biodiversité au niveau des populations
@@ -78,12 +77,30 @@ class: middle, center, inverse
 <br>
 --
 
-* Inclut maintenant **~21,000 populations** de **~4800 espèces** de mammifères, oiseaux, poissons, reptiles, et amphibiens, grâce aux chercheurs qui soumettent leurs données partout autour du monde!
+* Moyenne aggregée des changements dans l'abondance des populations vertébrés depuis 1970 
 <br>
 <br>
 --
 
-* Moyenne aggregée des changements dans l'abondance des populations vertébrés depuis 1970 
+* Inclut **~21,000 populations** de mammifères, oiseaux, poissons, reptiles, et amphibiens
+
+.cite[WWF. [2020](https://f.hubspotusercontent20.net/hubfs/4783129/LPR/PDFs/ENGLISH-SUMMARY.pdf) Living Planet Report 2020.]
+
+---
+# Tendance globale en 2020
+
+L'indice global montre une baisse moyenne de 68 % (95% CI: -73 % à -62 %) des populations de mammifères, oiseaux, amphibiens, reptiles et poissons suivis entre 1970 et 2016.
+
+![:scale = 90%](images/lpi2020.png)
+
+.cite[WWF. [2020](https://f.hubspotusercontent20.net/hubfs/4783129/LPR/PDFs/ENGLISH-SUMMARY.pdf) Living Planet Report 2020.]
+
+---
+# Tendances régionales en 2020
+
+
+![:scale = 90%](images/lpi2020_regions.png)
+.cite[WWF. [2020](https://f.hubspotusercontent20.net/hubfs/4783129/LPR/PDFs/ENGLISH-SUMMARY.pdf) Living Planet Report 2020.]
 
 ---
 class: middle, center, inverse
@@ -93,6 +110,28 @@ class: middle, center, inverse
 <hr width="100%" align="left" size="0.3" color="orange"></hr>
 
 ---
+# Qui l'utilise, et pour quoi?
+
+* Utilisé comme indicateur de biodiversité à l'échelle globale par la Convention sur la diversité biologique 
+
+--
+
+*  Évalue le progrès global vers des objectifs de conservation
+
+--
+
+  * 2010: Montre que les objectifs de la Convention n'ont pas été atteints 
+--
+
+  * 2020: Sera utilisé pour évaluer le progrès de 193 nations de la Convention vers les objectifs de biodiversité Aichi 
+  
+--
+  
+* Guide les politiques de conservation et la gestion de la biodiversité
+
+---
+
+
 class: middle, center, inverse
 
 # L'Indice Planète Vivante
