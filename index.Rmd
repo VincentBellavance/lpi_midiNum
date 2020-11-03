@@ -42,14 +42,68 @@ class: middle, title-slide
 <div class="my-logo-left"></div>
 
 # Living Planet Index
-
 <hr width="65%" align="left" size="0.3" color="orange"></hr>
 
-### Katherine Hébert
-### Vincent Bellavance
+### Katherine Hébert & Vincent Bellavance
 
 <br><br><br><br><br>
 <i class="fa fa-twitter fa-lg" style="color:#e7e8e2"></i> [@hebert_kat](https://twitter.com/hebert_kat)
 
 <i class="fa fa-twitter fa-lg" style="color:#e7e8e2"></i> [@v_bellavance](https://twitter.com/v_bellavance)
+---
+
+# Introduction à l'Indice Planète Vivante
+
+- Qu'est-ce que c'est?
+
+- Qui l'utilise, et pour quoi?
+
+- Ça fonctionne comment?
+
+- Critiques
+
+---
+class: middle, center, inverse
+
+# L'Indice Planète Vivante
+## Qu'est-ce que c'est?
+<hr width="100%" align="left" size="0.3" color="orange"></hr>
+
+---
+
+# Qu'est-ce que c'est?
+
+* Indice global de changement de biodiversité au niveau des populations
+<br>
+<br>
+--
+
+* Inclut maintenant **~21,000 populations** de **~4800 espèces** de mammifères, oiseaux, poissons, reptiles, et amphibiens, grâce aux chercheurs qui soumettent leurs données partout autour du monde!
+<br>
+<br>
+--
+
+* Moyenne aggregée des changements dans l'abondance des populations vertébrés depuis 1970 
+
+---
+class: middle, center, inverse
+
+# L'Indice Planète Vivante
+## Qui l'utilise, et pour quoi?
+<hr width="100%" align="left" size="0.3" color="orange"></hr>
+
+---
+class: middle, center, inverse
+
+# L'Indice Planète Vivante
+## Ça fonctionne comment?
+<hr width="100%" align="left" size="0.3" color="orange"></hr>
+
+---
+class: middle, center, inverse
+
+# L'Indice Planète Vivante
+## Critiques
+<hr width="100%" align="left" size="0.3" color="orange"></hr>
+
 ---
