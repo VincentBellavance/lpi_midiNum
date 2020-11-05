@@ -41,7 +41,7 @@ class: middle, title-slide
 
 <div class="my-logo-left"></div>
 
-# Living Planet Index
+# Living Planet Index (Test deployment)
 <hr width="65%" align="left" size="0.3" color="orange"></hr>
 
 ### Katherine Hébert & Vincent Bellavance
