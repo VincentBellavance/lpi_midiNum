@@ -28,7 +28,7 @@ ggplot(df_l) +
        title = "Step 1: Population time series") +
   scale_color_brewer(palette = "Dark2") +
   theme(legend.position = "bottom")
-ggsave("images/fig1_timeseries.png", width = 6, height = 6, units = "in")
+ggsave("images/fig1_timeseries.png", width = 5, height = 4.5, units = "in")
 
 # Fit model on each population's abundance through time ------------------------
 
@@ -71,14 +71,16 @@ ggplot(df_l, aes(x = year, group = population)) +
   geom_ribbon(aes(ymin = fit - se.fit,
                   ymax = fit + se.fit, fill = population), alpha = .3) +
   geom_line(aes(y = fit)) +
-  labs(y = "N(t) (log10)", 
+  labs(y = "Abundances (log10)", 
        col = "Abundances", 
        fill = "GAM predictions",
        title = "Step 2: Predict abundances ~ time from GAM",
        caption = "Ribbon shows standard error from GAM predictions.") + 
   facet_grid(taxa ~ system) +
+  scale_color_brewer(palette = "Dark2") +
+  scale_fill_brewer(palette = "Dark2") +
   theme(legend.position = "bottom")
-ggsave("images/fig2_gam.png", width = 6, height = 6, units = "in")
+ggsave("images/fig2_gam.png", width = 5, height = 4.5, units = "in")
 
 
 # Calculate each population's growth rate (dt) through time --------------------
@@ -97,8 +99,9 @@ ggplot(df_l, aes(x = year, col = population)) +
        col = "Populations", 
        title = "Step 3: Calculate each population's annual growth rate") +
   facet_grid(taxa ~ system) +
+  scale_color_brewer(palette = "Dark2") +
   theme(legend.position = "bottom")
-ggsave("images/fig3_growthrates.png", width = 6, height = 6, units = "in")
+ggsave("images/fig3_growthrates.png", width = 5, height = 4.5, units = "in")
 
 # Take average annual growth rate per taxonomic group per system ---------------
 
@@ -157,7 +160,7 @@ ggplot(taxa_system, aes(x = year)) +
        subtitle = "Mean growth rate within each taxonomic group in each system") +
   facet_grid(taxa ~ system) +
   theme(legend.position = "bottom")
-ggsave("images/fig4_mean_taxasystem.png", width = 6, height = 6, units = "in")
+ggsave("images/fig4_mean_taxasystem.png", width = 5, height = 4.5, units = "in")
 
 
 # Take mean annual growth rate per system --------------------------------------
@@ -194,7 +197,7 @@ ggplot(system_df, aes(x = year, group = system)) +
        subtitle = "Mean growth rate within each system") +
   facet_wrap(~system) +
   theme(legend.position = "bottom")
-ggsave("images/fig5_mean_system.png", width = 6, height = 6, units = "in")
+ggsave("images/fig5_mean_system.png", width = 5, height = 4.5, units = "in")
 
   
 # Take average annual growth rate globally -------------------------------------
@@ -219,7 +222,7 @@ ggplot(all, aes(x = year)) +
        title = "Step 4: Calculate the mean annual growth rate (Part 3)",
        subtitle = "Mean growth rate across systems") +
   theme(legend.position = "bottom")
-ggsave("images/fig6_mean_all.png", width = 6, height = 6, units = "in")
+ggsave("images/fig6_mean_all.png", width = 5, height = 4.5, units = "in")
 
 
 # Calculate Living Planet Index (LPI baseline = 1) -----------------------------
@@ -238,4 +241,4 @@ ggplot(lpi, aes(x = year)) +
   geom_line(aes(y = lpi)) +
   labs(y = "Living Planet Index", 
        title = "Step 5: Calculate the Living Planet Index")
-ggsave("images/fig7_lpi.png", width = 6, height = 6, units = "in")
+ggsave("images/fig7_lpi.png", width = 5, height = 4.5, units = "in")
