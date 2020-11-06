@@ -10,7 +10,13 @@ source("scripts/lpi_functions.R")
 
 # set ggplot theme
 theme_set(theme_linedraw() +
-            theme(panel.grid = element_blank()))
+            theme(panel.grid = element_blank()
+                  #axis.text = element_text(size = 9),
+                  #axis.title = element_text(size = 10),
+                  #strip.text = element_text(face = "bold", size = 10),
+                  #legend.text = element_text(size = 10))
+                  )
+)
 
 # load population time series
 df_l <- readRDS("outputs/timeseries_long.RDS")
@@ -23,12 +29,12 @@ ggplot(df_l) +
   geom_line(aes(x = year, y = N, col = population)) +
   facet_grid(taxa ~ system) +
   coord_cartesian(ylim = c(0,max(df_l$N+10))) +
-  labs(y = "Abundance", 
+  labs(y = "Abundance", x = "",
        col = "Populations", 
        title = "Step 1: Population time series") +
   scale_color_brewer(palette = "Dark2") +
   theme(legend.position = "bottom")
-ggsave("images/fig1_timeseries.png", width = 5, height = 4.5, units = "in")
+ggsave("images/fig1_timeseries.svg", width = 5.54, height = 3.62, units = "in", dpi = 150)
 
 # Fit model on each population's abundance through time ------------------------
 
@@ -71,7 +77,7 @@ ggplot(df_l, aes(x = year, group = population)) +
   geom_ribbon(aes(ymin = fit - se.fit,
                   ymax = fit + se.fit, fill = population), alpha = .3) +
   geom_line(aes(y = fit)) +
-  labs(y = "Abundances (log10)", 
+  labs(y = "Abundances (log10)", x = "",
        col = "Abundances", 
        fill = "GAM predictions",
        title = "Step 2: Predict abundances ~ time from GAM",
@@ -80,7 +86,7 @@ ggplot(df_l, aes(x = year, group = population)) +
   scale_color_brewer(palette = "Dark2") +
   scale_fill_brewer(palette = "Dark2") +
   theme(legend.position = "bottom")
-ggsave("images/fig2_gam.png", width = 5, height = 4.5, units = "in")
+ggsave("images/fig2_gam.svg", width = 5.54, height = 3.62, units = "in", dpi = 150)
 
 
 # Calculate each population's growth rate (dt) through time --------------------
@@ -95,13 +101,13 @@ df_l = full_join(df_l, dt, by = c("population", "year"))
 # plot the growth rates
 ggplot(df_l, aes(x = year, col = population)) +
   geom_line(aes(y = 10^dt)) +
-  labs(y = "Annual growth rate", 
+  labs(y = "Annual growth rate", x = "",
        col = "Populations", 
        title = "Step 3: Calculate each population's annual growth rate") +
   facet_grid(taxa ~ system) +
   scale_color_brewer(palette = "Dark2") +
   theme(legend.position = "bottom")
-ggsave("images/fig3_growthrates.png", width = 5, height = 4.5, units = "in")
+ggsave("images/fig3_growthrates.svg", width = 5.54, height = 3.62, units = "in", dpi = 150)
 
 # Take average annual growth rate per taxonomic group per system ---------------
 
@@ -154,13 +160,14 @@ ggplot(taxa_system, aes(x = year)) +
   geom_line(aes(y = dt_mean, col = taxa)) +
   scale_fill_brewer(palette = "Dark2") +
   scale_color_brewer(palette = "Dark2") +
-  labs(y = "Mean annual growth rate", 
+  labs(y = "Mean annual growth rate", x = "",
        col = "Taxonomic group", fill = "Taxonomic group", 
        title = "Step 4: Calculate the mean annual growth rate (Part 1)",
        subtitle = "Mean growth rate within each taxonomic group in each system") +
   facet_grid(taxa ~ system) +
+  coord_cartesian(ylim = c(0.9, 1.1)) +
   theme(legend.position = "bottom")
-ggsave("images/fig4_mean_taxasystem.png", width = 5, height = 4.5, units = "in")
+ggsave("images/fig4_mean_taxasystem.svg", width = 5.54, height = 3.62, units = "in", dpi = 150)
 
 
 # Take mean annual growth rate per system --------------------------------------
@@ -188,16 +195,16 @@ system_df <- rbind(marine, terrestrial)
 
 # plot the system group means 
 ggplot(system_df, aes(x = year, group = system)) +
-  geom_ribbon(aes(ymin = cilo, ymax = cihi), alpha = .3) +
+  geom_ribbon(aes(ymin = cilo, ymax = cihi, fill = system), alpha = .3) +
   geom_line(aes(y = dt_mean)) +
-  scale_color_brewer(palette = "Set1") +
-  labs(y = "Mean annual growth rate", 
+  scale_fill_brewer(palette = "Set1", direction = -1) +
+  labs(y = "Mean annual growth rate", x = "",
        col = "System", 
        title = "Step 4: Calculate the mean annual growth rate (Part 2)",
        subtitle = "Mean growth rate within each system") +
   facet_wrap(~system) +
   theme(legend.position = "bottom")
-ggsave("images/fig5_mean_system.png", width = 5, height = 4.5, units = "in")
+ggsave("images/fig5_mean_system.svg", width = 5.54, height = 3.62, units = "in", dpi = 150)
 
   
 # Take average annual growth rate globally -------------------------------------
@@ -216,13 +223,14 @@ all <-  mutate(all, year = years)
 
 # plot the system group means 
 ggplot(all, aes(x = year)) +
-  geom_ribbon(aes(ymin = cilo, ymax = cihi), alpha = .3) +
+  geom_ribbon(aes(ymin = cilo, ymax = cihi), alpha = .5, fill = "#66a61e") +
   geom_line(aes(y = dt_mean)) +
-  labs(y = "Mean annual growth rate", 
+  labs(y = "Mean annual growth rate", x = "",
        title = "Step 4: Calculate the mean annual growth rate (Part 3)",
        subtitle = "Mean growth rate across systems") +
-  theme(legend.position = "bottom")
-ggsave("images/fig6_mean_all.png", width = 5, height = 4.5, units = "in")
+  theme(legend.position = "bottom") +
+  coord_cartesian(ylim = c(0.9,1.1))
+ggsave("images/fig6_mean_all.svg", width = 5.54, height = 3.62, units = "in", dpi = 150)
 
 
 # Calculate Living Planet Index (LPI baseline = 1) -----------------------------
@@ -236,9 +244,12 @@ lpi <- data.frame(
 )
 
 # plot
+quartz()
 ggplot(lpi, aes(x = year)) +
-  geom_ribbon(aes(ymin = cilo, ymax = cihi), alpha = .3) +
+  geom_ribbon(aes(ymin = cilo, ymax = cihi), alpha = .5, fill = "#66a61e") +
   geom_line(aes(y = lpi)) +
-  labs(y = "Living Planet Index", 
-       title = "Step 5: Calculate the Living Planet Index")
-ggsave("images/fig7_lpi.png", width = 5, height = 4.5, units = "in")
+  geom_hline(aes(yintercept = 1), lwd = .2, lty = 2) +
+  labs(y = "Living Planet Index", x = "",
+       title = "Step 5: Calculate the Living Planet Index") +
+  coord_cartesian(ylim = c(0,2))
+ggsave("images/fig7_lpi.svg", width = 5.54, height = 3.62, units = "in", dpi = 150)
