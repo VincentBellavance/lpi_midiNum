@@ -184,6 +184,15 @@ class: middle, center, inverse
 ![](images/fig6_mean_all.svg)
 ]
 ---
+# Calcul de l'indice
+
+
+.center[
+
+$$LPI(t) = LPI(t-1) * 10^{\overline{dt}}$$
+]
+
+---
 .center[
 ![](images/fig7_lpi.svg)
 ]
