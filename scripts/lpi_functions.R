@@ -64,3 +64,14 @@ dt_boot = function(dt){
                          cihi = dt_ci$basic[5])
   return(dtboot_df)
 }
+
+
+# function to calculate LPI 
+calclpi <- function(dt){
+  # dt : vector of mean growth rates (one per time step)
+  lpi = c(1) # initial value is 1 
+  for(i in 2:length(dt)){
+    lpi[i] <- lpi[i-1]*10^dt[i] 
+  }
+  return(lpi)
+}
