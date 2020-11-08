@@ -1,10 +1,10 @@
 /*title page*/
   .title-slide {
-    background-image: url('../../images/bg.jpg');
+    background-image: url('../../images/bg3.jpg');
     background-color: #23373B;
     background-size: contain;
     border: 0px;
-    background-position: 600px 0;
+    background-position: 615px 0;
     line-height: 1;
     padding: 10em 2em 1em 2em!important;
   }
@@ -287,6 +287,5 @@ a {
 /* MathJax */
   .mjx-chtml{
     font-size: 105% !important;
-    float: left !important;
-    padding: 0em 0em 0em 4.5em !important;
+    margin: 0em 0em 0em 0em !important;
   }

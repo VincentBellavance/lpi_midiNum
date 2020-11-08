@@ -41,8 +41,8 @@ class: middle, title-slide
 
 <div class="my-logo-left"></div>
 
-# Living Planet Index (Test deployment)
-<hr width="65%" align="left" size="0.3" color="orange"></hr>
+# Living Planet Index
+<hr width="65%" align="left" size="0.3" color="#8eafc8"></hr>
 
 ### Katherine Hébert & Vincent Bellavance
 
@@ -53,6 +53,7 @@ class: middle, title-slide
 ---
 
 # Introduction à l'Indice Planète Vivante
+<hr width="100%" align="left" size="0.3" color="#8eafc8"></hr>
 
 - Qu'est-ce que c'est?
 
@@ -67,10 +68,11 @@ class: middle, center, inverse
 
 # L'Indice Planète Vivante
 ## Qu'est-ce que c'est?
-<hr width="100%" align="left" size="0.3" color="orange"></hr>
+<hr width="100%" align="left" size="0.3" color=#8eafc8></hr>
 
 ---
 # Qu'est-ce que c'est?
+<hr width="100%" align="left" size="0.3" color=#8eafc8></hr>
 
 * Indice global de changement de biodiversité
 <br>
@@ -84,12 +86,13 @@ class: middle, center, inverse
 
 * Inclut **~21,000 populations** de **~4800** espèces de mammifères, oiseaux, poissons, reptiles, et amphibiens
 
-.center[![](images/taxa.png)]
+.center[![:scale 27%](images/taxa.png)]
 
 .cite[WWF. [2020](https://f.hubspotusercontent20.net/hubfs/4783129/LPR/PDFs/ENGLISH-SUMMARY.pdf) Living Planet Report 2020.]
 
 ---
 # Tendance globale en 2020
+<hr width="100%" align="left" size="0.3" color=#8eafc8></hr>
 
 L'indice global montre une **baisse moyenne de 68%** (95% CI: -73% à -62%) dans l'abondance des populations vertébrés suivis entre 1970 et 2016.
 
@@ -99,10 +102,11 @@ L'indice global montre une **baisse moyenne de 68%** (95% CI: -73% à -62%) dans
 
 ---
 # Tendances régionales en 2020
+<hr width="100%" align="left" size="0.3" color=#8eafc8></hr>
 
 L'indice peut aussi être décomposé par système (marin, eau douce, terrestre), groupe taxonomique, [région](http://stats.livingplanetindex.org/), etc.:
 
-![:scale = 90%](images/lpi2020_regions.png)
+.center[![:scale 90%](images/lpi2020_regions.png)]
 .cite[WWF. [2020](https://f.hubspotusercontent20.net/hubfs/4783129/LPR/PDFs/ENGLISH-SUMMARY.pdf) Living Planet Report 2020.]
 
 ---
@@ -110,10 +114,11 @@ class: middle, center, inverse
 
 # L'Indice Planète Vivante
 ## Qui l'utilise, et pour quoi?
-<hr width="100%" align="left" size="0.3" color="orange"></hr>
+<hr width="100%" align="left" size="0.3" color=#8eafc8></hr>
 
 ---
 # Qui l'utilise, et pour quoi?
+<hr width="100%" align="left" size="0.3" color=#8eafc8></hr>
 
 L'Indice Planète Vivante est un important **outil de communication** pour les gestionnaires de biodiversité et le public.
 
@@ -136,13 +141,18 @@ L'Indice Planète Vivante est un important **outil de communication** pour les g
 
 ---
 # Qui l'utilise, et pour quoi?
+<hr width="100%" align="left" size="0.3" color=#8eafc8></hr>
 
-L'indice est aussi utilisé par les médias pour communiquer le statut de la biodiversité au grand public.
+L'indice est aussi utilisé par les **médias** pour communiquer le statut de la biodiversité au **grand public**.
+
+--
 
 ![](images/nbc_headline.png)
 ![](images/cnn_headline.png)
 
-Souvent communiqué de façon alarmiste, malgré les efforts des auteurs du rapport pour améliorer l'interprétation de l'indice...
+--
+
+> **Souvent communiqué de façon alarmiste, malgré les efforts des auteurs du rapport pour améliorer l'interprétation de l'indice...**
 
 ---
 
@@ -150,11 +160,12 @@ class: middle, center, inverse
 
 # L'Indice Planète Vivante
 ## Ça fonctionne comment?
-<hr width="100%" align="left" size="0.3" color="orange"></hr>
+<hr width="100%" align="left" size="0.3" color=#8eafc8></hr>
+
 
 ---
 .center[
-![](images/LPI.png)
+![:scale 60%](images/LPI.png)
 ]
 
 ---
@@ -185,12 +196,11 @@ class: middle, center, inverse
 ]
 ---
 # Calcul de l'indice
-
-
-.center[
-
-$$LPI(t) = LPI(t-1) * 10^{\overline{dt}}$$
-]
+<hr width="100%" align="left" size="0.3" color=#8eafc8></hr>
+ <br> <br> <br> <br>
+.font120[.center[
+  $$LPI_t = LPI_{t-1} * 10^{\bar{d_t}}$$
+]]
 
 ---
 .center[
@@ -201,10 +211,11 @@ class: middle, center, inverse
 
 # L'Indice Planète Vivante
 ## Critiques
-<hr width="100%" align="left" size="0.3" color="orange"></hr>
+<hr width="100%" align="left" size="0.3" color=#8eafc8></hr>
 
 ---
 # Communication vs. complexité
+<hr width="100%" align="left" size="0.3" color=#8eafc8></hr>
 
 * Une tendance moyenne est **facilement communiquée**
 
@@ -213,6 +224,7 @@ class: middle, center, inverse
 
 ---
 # Communication vs. complexité
+<hr width="100%" align="left" size="0.3" color=#8eafc8></hr>
 
 * Mais, la variabilité des tendances des populations est masquée
 
@@ -231,3 +243,47 @@ Proportion de populations en croissance (bleu), stables (vert), et en déclin (r
 .cite[WWF. [2020](https://f.hubspotusercontent20.net/hubfs/4783129/LPR/PDFs/ENGLISH%20-%20TECH%20SUPPLIMENT.pdf) Living Planet Report 2020 (Technical Supplement).]
 
 ---
+# Méthode
+<hr width="100%" align="left" size="0.3" color=#8eafc8></hr>
+
+- Séries temporelles: **n >= 2 mesures**
+
+--
+
+- Données principalement en **Amérique du Nord** et en **Europe**
+<br><br>
+.center[
+  ![:scale 60%](images/daskalova2020_geobias.png)
+]
+
+.cite[Daskalova _et al._ [2020](https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-020-17779-0/MediaObjects/41467_2020_17779_MOESM1_ESM.pdf)]
+
+---
+# Autres études divergentes
+<hr width="100%" align="left" size="0.3" color=#8eafc8></hr>
+
+.center[
+  ![:scale 60%](images/dornelas2019.jpg)
+]
+
+.cite[Dornelas _et al._ [2019](https://onlinelibrary.wiley.com/doi/abs/10.1111/ele.13242)]
+
+---
+# Autres études divergentes
+<hr width="100%" align="left" size="0.3" color=#8eafc8></hr>
+
+.center[
+  ![:scale 85%](images/outhwaite2020.jpg)
+]
+
+.cite[Outhwaite _et al._ [2020](https://www.nature.com/articles/s41559-020-1111-z)]
+
+---
+# Autres études divergentes
+<hr width="100%" align="left" size="0.3" color=#8eafc8></hr>
+
+.center[
+  ![:scale 60%](images/leung2017.png)
+]
+
+.cite[Leung _et al._ [2017](https://onlinelibrary.wiley.com/doi/full/10.1111/ddi.12636)]
