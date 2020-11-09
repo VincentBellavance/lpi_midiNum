@@ -188,6 +188,12 @@ class: middle, center, inverse
 ]
 ---
 .center[
+![](images/lpi_weighting.png)
+]
+
+.cite[McRae et al. [2017](10.1371/journal.pone.0169156.g001) The Diversity-Weighted Living Planet Index.]
+---
+.center[
 ![](images/fig4_mean_taxasystem.svg)
 ]
 ---
