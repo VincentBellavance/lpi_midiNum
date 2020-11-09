@@ -33,7 +33,7 @@ ggplot(df_l) +
        col = "Populations", 
        title = "Step 1: Population time series") +
   scale_color_brewer(palette = "Dark2") +
-  theme(legend.position = "bottom")
+  theme(legend.position = "none")
 ggsave("images/fig1_timeseries.svg", width = 5.54, height = 3.62, units = "in", dpi = 150)
 
 # Fit model on each population's abundance through time ------------------------
@@ -85,7 +85,7 @@ ggplot(df_l, aes(x = year, group = population)) +
   facet_grid(taxa ~ system) +
   scale_color_brewer(palette = "Dark2") +
   scale_fill_brewer(palette = "Dark2") +
-  theme(legend.position = "bottom")
+  theme(legend.position = "none")
 ggsave("images/fig2_gam.svg", width = 5.54, height = 3.62, units = "in", dpi = 150)
 
 
@@ -106,7 +106,7 @@ ggplot(df_l, aes(x = year, col = population)) +
        title = "Step 3: Calculate each population's annual growth rate") +
   facet_grid(taxa ~ system) +
   scale_color_brewer(palette = "Dark2") +
-  theme(legend.position = "bottom")
+  theme(legend.position = "none")
 ggsave("images/fig3_growthrates.svg", width = 5.54, height = 3.62, units = "in", dpi = 150)
 
 # Take average annual growth rate per taxonomic group per system ---------------
@@ -157,7 +157,7 @@ taxa_system <- rbind(birds_marine, mammals_marine, birds_terrestrial, mammals_te
 # plot the taxa_system group means 
 ggplot(taxa_system, aes(x = year)) +
   geom_ribbon(aes(ymin = cilo, ymax = cihi, fill = taxa), alpha = .3) +
-  geom_line(aes(y = dt_mean, col = taxa)) +
+  geom_line(aes(y = dt_mean)) +
   scale_fill_brewer(palette = "Dark2") +
   scale_color_brewer(palette = "Dark2") +
   labs(y = "Mean annual growth rate", x = "",
@@ -166,7 +166,7 @@ ggplot(taxa_system, aes(x = year)) +
        subtitle = "Mean growth rate within each taxonomic group in each system") +
   facet_grid(taxa ~ system) +
   coord_cartesian(ylim = c(0.9, 1.1)) +
-  theme(legend.position = "bottom")
+  theme(legend.position = "none")
 ggsave("images/fig4_mean_taxasystem.svg", width = 5.54, height = 3.62, units = "in", dpi = 150)
 
 
@@ -196,14 +196,14 @@ system_df <- rbind(marine, terrestrial)
 # plot the system group means 
 ggplot(system_df, aes(x = year, group = system)) +
   geom_ribbon(aes(ymin = cilo, ymax = cihi, fill = system), alpha = .3) +
-  geom_line(aes(y = dt_mean)) +
+  geom_line(aes(y = dt_mean), lwd = .7) +
   scale_fill_brewer(palette = "Set1", direction = -1) +
   labs(y = "Mean annual growth rate", x = "",
        col = "System", 
        title = "Step 4: Calculate the mean annual growth rate (Part 2)",
        subtitle = "Mean growth rate within each system") +
   facet_wrap(~system) +
-  theme(legend.position = "bottom")
+  theme(legend.position = "none")
 ggsave("images/fig5_mean_system.svg", width = 5.54, height = 3.62, units = "in", dpi = 150)
 
   
@@ -228,7 +228,7 @@ ggplot(all, aes(x = year)) +
   labs(y = "Mean annual growth rate", x = "",
        title = "Step 4: Calculate the mean annual growth rate (Part 3)",
        subtitle = "Mean growth rate across systems") +
-  theme(legend.position = "bottom") +
+  theme(legend.position = "none") +
   coord_cartesian(ylim = c(0.9,1.1))
 ggsave("images/fig6_mean_all.svg", width = 5.54, height = 3.62, units = "in", dpi = 150)
 
@@ -244,7 +244,6 @@ lpi <- data.frame(
 )
 
 # plot
-quartz()
 ggplot(lpi, aes(x = year)) +
   geom_ribbon(aes(ymin = cilo, ymax = cihi), alpha = .5, fill = "#66a61e") +
   geom_line(aes(y = lpi)) +
