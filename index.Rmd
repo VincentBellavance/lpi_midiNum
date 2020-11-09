@@ -165,7 +165,7 @@ class: middle, center, inverse
 
 ---
 .center[
-![:scale 60%](images/LPI.png)
+![:scale 65%](images/lpi_flowchart.png)
 ]
 
 ---
@@ -184,6 +184,10 @@ class: middle, center, inverse
 ]
 ---
 .center[
+![:scale 65%](images/lpi_flowchart.png)
+]
+---
+.center[
 ![](images/fig4_mean_taxasystem.svg)
 ]
 ---
@@ -193,6 +197,10 @@ class: middle, center, inverse
 ---
 .center[
 ![](images/fig6_mean_all.svg)
+]
+---
+.center[
+![:scale 65%](images/lpi_flowchart.png)
 ]
 ---
 # Calcul de l'indice
