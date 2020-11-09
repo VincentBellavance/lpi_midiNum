@@ -251,7 +251,7 @@ Proportion de populations en croissance (bleu), stables (vert), et en déclin (r
 .cite[WWF. [2020](https://f.hubspotusercontent20.net/hubfs/4783129/LPR/PDFs/ENGLISH%20-%20TECH%20SUPPLIMENT.pdf) Living Planet Report 2020 (Technical Supplement).]
 
 ---
-# Méthode
+# Données
 <hr width="100%" align="left" size="0.3" color=#8eafc8></hr>
 
 - Séries temporelles: **n >= 2 mesures**
@@ -267,7 +267,7 @@ Proportion de populations en croissance (bleu), stables (vert), et en déclin (r
 .cite[Daskalova _et al._ [2020](https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-020-17779-0/MediaObjects/41467_2020_17779_MOESM1_ESM.pdf)]
 
 ---
-# Autres études divergentes
+# Autres études
 <hr width="100%" align="left" size="0.3" color=#8eafc8></hr>
 
 .center[
@@ -277,7 +277,7 @@ Proportion de populations en croissance (bleu), stables (vert), et en déclin (r
 .cite[Dornelas _et al._ [2019](https://onlinelibrary.wiley.com/doi/abs/10.1111/ele.13242)]
 
 ---
-# Autres études divergentes
+# Autres études
 <hr width="100%" align="left" size="0.3" color=#8eafc8></hr>
 
 .center[
@@ -287,7 +287,7 @@ Proportion de populations en croissance (bleu), stables (vert), et en déclin (r
 .cite[Outhwaite _et al._ [2020](https://www.nature.com/articles/s41559-020-1111-z)]
 
 ---
-# Autres études divergentes
+# Autres études
 <hr width="100%" align="left" size="0.3" color=#8eafc8></hr>
 
 .center[
